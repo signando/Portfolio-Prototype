@@ -1,0 +1,1624 @@
+:root {
+    --dark-grey: rgb(56, 56, 56);
+    --med-grey: rgb(141, 140, 140);
+    --light-grey: rgb(211, 210, 210);
+    --lighter-grey: rgb(238, 238, 238);
+}
+
+
+header {
+    background: linear-gradient( to bottom, black 20%, black, rgb(255, 37, 109) 90%, antiquewhite);
+}
+
+.bg-image-2 {
+    background-image: url(images/16-ansichtkaart.jpg);
+    background-size: 100% 100%;
+    background-position-y: 0rem;
+}
+/*
+.cont-nav-banner nav div a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px whitesmoke;
+    color: rgb(47, 20, 168);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 5px 5px 10px antiquewhite;
+}
+*/
+.container-tussen {
+    background: linear-gradient( to bottom, antiquewhite, rgb(255, 37, 109), rgb(48, 0, 16) 90%);
+}
+
+
+
+
+/*Footer*/
+
+.container-tussen2 {
+    background: linear-gradient( to top, antiquewhite, rgb(255, 37, 109), rgb(48, 0, 16) 90%);
+}
+
+footer {
+    background: linear-gradient( to top, black 20%, black, rgb(255, 37, 109) 90%, antiquewhite);
+}
+
+
+/*footer*/
+/*
+.Banner-B {
+    width: 4.5rem;
+    height: 5.5rem;
+    background: linear-gradient( to bottom, rgb(48, 0, 16), rgb(255, 37, 109), white);
+    position: absolute;
+    top: 3.95rem;
+    left: 3.5rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 1px solid black;
+    z-index: 1;
+}
+
+.emoji-1 {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: rgb(255, 106, 106);
+}
+
+.emoji-2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: white;
+}
+
+.emoji-3 {
+    position: absolute;
+    top: 2.6rem;
+    left: 2.6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: rgb(140, 140, 255);   
+}
+*/
+.feedback {
+    background: linear-gradient( to top, rgb(48, 0, 16), rgb(255, 37, 109), rgb(48, 0, 16));
+    padding-top: 1em;
+    padding-bottom: 4em;   
+}
+
+.feedback-frame {
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: black;
+    border: 20px solid black;
+    border-radius: 10px;  
+}
+
+.feedback-BG {
+    width: 100%;
+    height: 105vh;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    background: radial-gradient(circle,black, black, rgb(168, 148, 122));
+    position: relative;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.feedback-frame-2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.feedback-form {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.feedback-frame h1 {
+    background: linear-gradient(to bottom, black, rgb(48, 0, 16), rgb(255, 37, 109));
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding: 2.5rem 0;
+    font-size: 2rem;
+}
+
+.fieldset-BG {
+    margin: 0 0.5em;
+    background-color: rgb(255, 37, 109);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.feedback-form fieldset p {
+    color: antiquewhite;
+}
+
+.fieldset-1 {
+    margin: 0 0.5em;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.legend-1 {
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.fieldset-1 p:nth-of-type(1) input {
+    width: 20rem;
+    margin-left: 1rem;
+    background-color: var(--lighter-grey);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.fieldset-1 p:nth-of-type(2) input {
+    width: 20rem;
+    margin-left: 0.85rem;
+    background-color: var(--lighter-grey);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.fieldset-1 p:nth-of-type(3) input {
+    width: 20rem;
+    margin-left: 1.2rem;
+    background-color: var(--lighter-grey);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.fieldset-1 p:nth-of-type(4) textarea {
+    width: 17rem;
+    height: 8vh;
+    margin-left: 1rem;
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 7px;
+}
+.fieldset-1 p:nth-of-type(4) input {
+    cursor: pointer;
+}
+
+.form-cont-tussen {
+    width: 100%;
+    height: 2vh;
+    margin: 0 0.5em;
+}
+
+.fieldset-2 {
+    margin: 0 0.5em;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.legend-2 {
+    font-size: 1.25rem;
+    color: whitesmoke;   
+}
+
+.fieldset-2 input:hover {
+    cursor: pointer;
+}
+
+.fieldset-2 .cont-vijf-sterren {
+    width: 2.3rem;
+    display: inline-block;
+    margin-right: 1rem;
+    padding-left: 0.35rem;
+    padding-top: 0.1rem;
+    border-top: 4px solid black;
+    color: antiquewhite;
+}
+
+.fieldset-2 .cont-vijf-sterren .antaal-sterren {
+    width: 2rem;
+    height: 2rem;
+    background: radial-gradient(circle, whitesmoke, black, black, black);
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    visibility: hidden;
+}
+.container-antaal-sterren {
+    position: relative;
+}
+
+.fieldset-2 .cont-vijf-sterren .input-sterren-1:checked + div .een-ster {
+    visibility: visible;   
+}
+
+.fieldset-2 .cont-vijf-sterren .input-sterren-2:checked + div .sterren-1en2 {
+    visibility: visible;   
+}
+
+.twee-sterren-1 {
+    position: absolute;
+    top: 0;
+    left: -3.95rem;
+}
+
+.fieldset-2 .cont-vijf-sterren .input-sterren-3:checked + div .sterren-1en2en3 {
+    visibility: visible;
+}
+
+.drie-sterren-1 {
+    position: absolute;
+    top: 0;
+    left: -7.9rem;
+}
+
+.fieldset-2 .cont-vijf-sterren .input-sterren-4:checked + div .sterren-1en2en3en4 {
+    visibility: visible;   
+}
+
+.vier-sterren-1 {
+    position: absolute;
+    top: 0;
+    left: -11.85rem;   
+}
+.fieldset-2 .cont-vijf-sterren .input-sterren-5:checked + div .sterren-1en2en3en4en5 {
+    visibility: visible;
+}
+
+.vijf-sterren-1 {
+    position: absolute;
+    top: 0;
+    left: -15.8rem;
+}
+
+.cont-textarea {
+    margin-top: 2rem;
+}
+
+textarea {
+    width: 99.25%;
+    height: 20vh;
+    background-color: var(--lighter-grey);
+    border-left: 4px solid black;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 7px;
+}
+
+.fieldset-2-cont-bottom {
+    width: 98%;
+    height: 0.5rem;
+    background-color: rgb(255, 37, 109);
+}
+
+.buttons {
+    width: 98.1%;
+    height: 4rem;
+    margin: 0 0.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    background: linear-gradient(to top, rgb(48, 0, 16), rgb(48, 0, 16), rgb(255, 37, 109));
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.buttons input {
+    background: linear-gradient(to bottom, rgb(48, 0, 16), rgb(255, 37, 109), whitesmoke);
+    color: antiquewhite;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttons #Verzend {
+    margin-right: 1rem;
+    padding: 0.5rem 2rem;
+}
+.buttons #Verzend:hover, .buttons #Verzend:focus {
+    background: linear-gradient(to bottom, rgb(48, 0, 16), green, whitesmoke);
+    color: rgb(48, 0, 16);
+}
+
+.buttons #Herstel {
+    margin-left: 1rem;
+    padding: 0.5rem 2rem;
+    order: -1;
+}
+.buttons #Herstel:hover, .buttons #Herstel:focus {
+    background: linear-gradient(to bottom, rgb(48, 0, 16), red, whitesmoke);
+    color: rgb(48, 0, 16);
+}
+
+
+
+
+.vas-1 {
+    width: 20%;
+    height: 45vh;
+    background-image: url(images/vas-bloemen-3d.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 66.5vw;
+    bottom: 20vh;
+    z-index: 1;
+}
+.vas-2 {
+    width: 25%;
+    height: 50vh;
+    background-image: url(images/vas-bloemen-3d.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+    position: absolute;
+    left: 3vw;
+    bottom: 0;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+.feedback-Stars {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+}
+.feedback-Stars div:nth-of-type(1) {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+     position: absolute;
+     top: 49rem;
+     left: -1rem;
+}
+.feedback-Stars div:nth-of-type(2) {
+    width: 4rem;
+    height: 4rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 48rem;
+     left: 11rem;
+}
+.feedback-Stars div:nth-of-type(3) {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 40rem;
+     left: 16rem;      
+}
+.feedback-Stars div:nth-of-type(4) {
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 39rem;
+     left: 14rem;     
+}
+.feedback-Stars div:nth-of-type(5) {
+    width: 8rem;
+    height: 8rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 24.5rem;
+     left: 1.5rem;     
+}
+.feedback-Stars div:nth-of-type(6) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53rem;
+     left: 29.5rem;       
+}
+.feedback-Stars div:nth-of-type(7) {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: rgb(46, 45, 45);
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 52rem;
+     left: 41rem;     
+}
+.feedback-Stars div:nth-of-type(8) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 52.5rem;
+     left: 58.5rem;      
+}
+.feedback-Stars div:nth-of-type(9) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 54rem;
+     left: 67rem;     
+}
+.feedback-Stars div:nth-of-type(10) {
+    width: 4rem;
+    height: 4rem;
+    background-color: rgb(49, 48, 48);
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 23rem;
+     left: 21rem;      
+}
+
+.feedback-Stars div:nth-of-type(11) {
+    width: 2rem;
+    height: 2rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+     position: absolute;
+     top: 45rem;
+     left: 2rem;
+}
+.feedback-Stars div:nth-of-type(12) {
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 49rem;
+     left: 13.5rem;
+}
+.feedback-Stars div:nth-of-type(13) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 45rem;
+     left: 22rem;      
+}
+.feedback-Stars div:nth-of-type(14) {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 30rem;
+     left: 8rem;     
+}
+.feedback-Stars div:nth-of-type(15) {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 30rem;
+     left: 20rem;     
+}
+.feedback-Stars div:nth-of-type(16) {
+    width: 1rem;
+    height: 1rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 55rem;
+     left: 34rem;       
+}
+.feedback-Stars div:nth-of-type(17) {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 54rem;
+     left: 45rem;     
+}
+.feedback-Stars div:nth-of-type(18) {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 52rem;
+     left: 50rem;      
+}
+.feedback-Stars div:nth-of-type(19) {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 52rem;
+     left: 63rem;     
+}
+.feedback-Stars div:nth-of-type(20) {
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 55rem;
+     left: 77rem;      
+}
+
+.feedback-Stars div:nth-of-type(21) {
+    width: 8rem;
+    height: 8rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+     position: absolute;
+     top: 40rem;
+     left: 5rem;
+}
+.feedback-Stars div:nth-of-type(22) {
+    width: 4rem;
+    height: 4rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 35rem;
+     left: 4rem;
+}
+.feedback-Stars div:nth-of-type(23) {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 50.5rem;
+     left: 23rem;      
+}
+.feedback-Stars div:nth-of-type(24) {
+    width: 9rem;
+    height: 9rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 32rem;
+     left: 19rem;     
+}
+.feedback-Stars div:nth-of-type(25) {
+    width: 3rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 25rem;
+     left: 15rem;     
+}
+.feedback-Stars div:nth-of-type(26) {
+    width: 4.25rem;
+    height: 4.25rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53rem;
+     left: 35.5rem;       
+}
+.feedback-Stars div:nth-of-type(27) {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53.5rem;
+     left: 55rem;     
+}
+.feedback-Stars div:nth-of-type(28) {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 55.25rem;
+     left: 63rem;      
+}
+.feedback-Stars div:nth-of-type(29) {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53rem;
+     left: 71.5rem;     
+}
+.feedback-Stars div:nth-of-type(30) {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 16rem;
+     left: 0.5rem;      
+}
+
+
+.feedback-Stars div:nth-of-type(31) {
+    width: 10rem;
+    height: 10rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 10rem;
+     left: 6rem;      
+}
+.feedback-Stars div:nth-of-type(32) {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 15rem;
+     left: 20rem;      
+}
+.feedback-Stars div:nth-of-type(33) {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 1rem;
+     left: 7rem;      
+}
+.feedback-Stars div:nth-of-type(34) {
+    width: 7rem;
+    height: 7rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 1rem;
+     left: 18.5rem;      
+}
+.feedback-Stars div:nth-of-type(35) {
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 1rem;
+     left: 96rem;      
+}
+.feedback-Stars div:nth-of-type(36) {
+    width: 8rem;
+    height: 8rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 8rem;
+     left: 87rem;      
+}
+.feedback-Stars div:nth-of-type(37) {
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 15rem;
+     left: 77.5rem;      
+}
+.feedback-Stars div:nth-of-type(38) {
+    width: 9rem;
+    height: 9rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 18rem;
+     left: 83rem;      
+}
+.feedback-Stars div:nth-of-type(39) {
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 27.5rem;
+     left: 89rem;      
+}
+.feedback-Stars div:nth-of-type(40) {
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 35rem;
+     left: 79rem;      
+}
+.feedback-Stars div:nth-of-type(41) {
+    width: 3rem;
+    height: 3rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 20rem;
+     left: 8.5rem;      
+}
+.feedback-Stars div:nth-of-type(42) {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 5rem;
+     left: 2rem;      
+}
+.feedback-Stars div:nth-of-type(43) {
+    width: 1rem;
+    height: 1rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 1.5rem;
+     left: 14rem;      
+}
+.feedback-Stars div:nth-of-type(44) {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: -1rem;
+     left: 78rem;      
+}
+.feedback-Stars div:nth-of-type(45) {
+    width: 2rem;
+    height: 2rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 0.5rem;
+     left: 101rem;      
+}
+.feedback-Stars div:nth-of-type(46) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 12rem;
+     left: 83rem;      
+}
+.feedback-Stars div:nth-of-type(47) {
+    width: 6rem;
+    height: 6rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 15rem;
+     left: 95rem;      
+}
+.feedback-Stars div:nth-of-type(48) {
+    width: 11rem;
+    height: 11rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 23rem;
+     left: 95rem;      
+}
+.feedback-Stars div:nth-of-type(49) {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 29rem;
+     left: 82rem;      
+}
+.feedback-Stars div:nth-of-type(50) {
+    width: 1rem;
+    height: 1rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 36rem;
+     left: 95rem;      
+}
+.feedback-Stars div:nth-of-type(51) {
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 17rem;
+     left: 17rem;      
+}
+.feedback-Stars div:nth-of-type(52) {
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 0.5rem;
+     left: 1rem;      
+}
+.feedback-Stars div:nth-of-type(53) {
+    width: 6rem;
+    height: 6rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 6rem;
+     left: 14rem;      
+}
+.feedback-Stars div:nth-of-type(54) {
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 2rem;
+     left: 90rem;      
+}
+.feedback-Stars div:nth-of-type(55) {
+    width: 8rem;
+    height: 8rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 4rem;
+     left: 96rem;      
+}
+.feedback-Stars div:nth-of-type(56) {
+    width: 1rem;
+    height: 1rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 11rem;
+     left: 80rem;      
+}
+.feedback-Stars div:nth-of-type(57) {
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 16rem;
+     left: 90rem;      
+}
+.feedback-Stars div:nth-of-type(58) {
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 24rem;
+     left: 78.5rem;      
+}
+.feedback-Stars div:nth-of-type(59) {
+    width: 3rem;
+    height: 3rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 30rem;
+     left: 92rem;      
+}
+.feedback-Stars div:nth-of-type(60) {
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 40rem;
+     left: 83rem;      
+}
+.feedback-Stars div:nth-of-type(61) {
+    width: 2rem;
+    height: 2rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 40rem;
+     left: 78rem;      
+}
+.feedback-Stars div:nth-of-type(62) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 36rem;
+     left: 98rem;      
+}
+.feedback-Stars div:nth-of-type(63) {
+    width: 2rem;
+    height: 2rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 35rem;
+     left: 85rem;      
+}
+.feedback-Stars div:nth-of-type(64) {
+    width: 8.5rem;
+    height: 8.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 35rem;
+     left: 87rem;      
+}
+.feedback-Stars div:nth-of-type(65) {
+    width: 12rem;
+    height: 12rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 41rem;
+     left: 93rem;      
+}
+.feedback-Stars div:nth-of-type(66) {
+    width: 5rem;
+    height: 5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53rem;
+     left: 98rem;      
+}
+.feedback-Stars div:nth-of-type(67) {
+    width: 6rem;
+    height: 6rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 50rem;
+     left: 88rem;      
+}
+.feedback-Stars div:nth-of-type(68) {
+    width: 8rem;
+    height: 8rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 45rem;
+     left: 77rem;      
+}
+.feedback-Stars div:nth-of-type(69) {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 53rem;
+     left: 83rem;      
+}
+.feedback-Stars div:nth-of-type(70) {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: whitesmoke;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); 
+    position: absolute;
+     top: 47rem;
+     left: 88rem;      
+}
+
+
+
+
+
+
+
+
+
+@keyframes opacity-B-stars {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.4;  
+    }
+    to {
+        opacity: 0; 
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(1);
+    }
+    33% {
+        transform: scale(1.25);
+    }
+    66% {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+body .feedback-Stars {
+    opacity: 0.95;
+    transition: 45000ms ease;
+}
+
+ #starwars div:nth-of-type(1) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(2) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2250ms;  
+}
+ #starwars div:nth-of-type(3) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(4) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(5) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1750ms;  
+}
+ #starwars div:nth-of-type(6) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1250ms;  
+}
+ #starwars div:nth-of-type(7) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;  
+}
+ #starwars div:nth-of-type(8) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1750ms;  
+}
+ #starwars div:nth-of-type(9) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;  
+}
+ #starwars div:nth-of-type(10) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+ #starwars div:nth-of-type(11) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;  
+}
+ #starwars div:nth-of-type(12) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(13) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(14) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;  
+}
+ #starwars div:nth-of-type(15) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+ #starwars div:nth-of-type(16) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(17) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+ #starwars div:nth-of-type(18) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+ #starwars div:nth-of-type(19) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+ #starwars div:nth-of-type(20) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 4500ms;  
+}
+ #starwars div:nth-of-type(21) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;  
+}
+ #starwars div:nth-of-type(22) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(23) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 4000ms;  
+}
+ #starwars div:nth-of-type(24) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;  
+}
+ #starwars div:nth-of-type(25) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+ #starwars div:nth-of-type(26) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+ #starwars div:nth-of-type(27) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;  
+}
+ #starwars div:nth-of-type(28) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;  
+}
+ #starwars div:nth-of-type(29) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 4500ms;  
+}
+ #starwars div:nth-of-type(30) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(31) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+ #starwars div:nth-of-type(32) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+ #starwars div:nth-of-type(33) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 650ms;  
+}
+ #starwars div:nth-of-type(34) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(35) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;  
+}
+ #starwars div:nth-of-type(36) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(37) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(38) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 9000ms;  
+}
+ #starwars div:nth-of-type(39) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+ #starwars div:nth-of-type(40) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(41) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+ #starwars div:nth-of-type(42) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 6500ms;  
+}
+ #starwars div:nth-of-type(43) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 9500ms;  
+}
+ #starwars div:nth-of-type(44) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+ #starwars div:nth-of-type(45) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(46) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+ #starwars div:nth-of-type(47) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+ #starwars div:nth-of-type(48) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+ #starwars div:nth-of-type(49) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+ #starwars div:nth-of-type(50) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(51) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 4500ms;  
+}
+ #starwars div:nth-of-type(52) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(53) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1250ms;  
+}
+ #starwars div:nth-of-type(54) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+ #starwars div:nth-of-type(55) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(56) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;  
+}
+ #starwars div:nth-of-type(57) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 7250ms;  
+}
+ #starwars div:nth-of-type(58) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;  
+}
+ #starwars div:nth-of-type(59) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+ #starwars div:nth-of-type(60) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(61) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;  
+}
+ #starwars div:nth-of-type(62) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+ #starwars div:nth-of-type(63) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+ #starwars div:nth-of-type(64) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+ #starwars div:nth-of-type(65) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3250ms;  
+}
+ #starwars div:nth-of-type(66) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+ #starwars div:nth-of-type(67) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+ #starwars div:nth-of-type(68) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+ #starwars div:nth-of-type(69) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+ #starwars div:nth-of-type(70) {
+    animation-name: opacity-B-stars, growth;
+    animation-duration: 10000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+

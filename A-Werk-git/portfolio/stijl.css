@@ -1,0 +1,4057 @@
+body {
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+:root {
+    --dark-grey: rgb(56, 56, 56);
+    --med-grey: rgb(141, 140, 140);
+    --light-grey: rgb(211, 210, 210);
+    --lighter-grey: rgb(238, 238, 238);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sansita+Swashed:wght@300&family=Satisfy&family=Space+Mono&display=swap');
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.75;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes opacity-einde {
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    to{
+        opacity: 0;
+    }
+}
+/*
+@keyframes heart {
+    from {
+        fill: red;
+    }
+    50% {
+        fill: red;
+    }
+    to {
+        fill: black;
+    }
+}
+*/
+@keyframes eclipse {
+    from {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+@keyframes ride {
+    from {
+        transform: translateX(0);
+        font-size: 0.66em;
+    }
+    50% {
+        font-size: 2em;  
+    }
+    to {
+        transform: translateX(15rem);
+        font-size: 0.66em;   
+    }
+}
+
+@keyframes ride-rev {
+    from {
+        transform: translateX(15rem);
+        font-size: 2em;
+    }
+    50% {
+        font-size: 0.66em;  
+    }
+    to {
+        transform: translateX(0);
+        font-size: 2em;   
+    }
+}
+
+
+@keyframes magic {
+    from {
+        opacity: 0;
+    }
+    2.5% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    97.5% {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes jump1 {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8rem);
+        fill: rgb(255, 187, 0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-1.5rem);
+        fill: rgb(0, 162, 255);  
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes jump2 {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3.5rem);
+        fill: rgb(255, 187, 0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-0.75rem);
+        fill: rgb(0, 162, 255);  
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes jump3 {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1rem);
+        fill: rgb(255, 187, 0);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(-0.1rem);
+        fill: rgb(0, 162, 255);  
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes boat1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-80rem);
+    }
+}
+
+@keyframes boat2 {
+    from {
+        transform: translateX(0rem);
+    }
+    to {
+        transform: translateX(80rem);
+    }
+}
+
+@keyframes boat3 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(90rem);
+    }
+}
+
+@keyframes sunset {
+    from {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-32.5rem,-8rem);
+    }
+    to {
+        transform: translate(-70rem, 4rem);
+        width: 5rem;
+        height: 3.5rem;
+        opacity: 0.4;
+    }
+}
+
+@keyframes tree-land {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(64rem);
+    }
+}
+
+@keyframes tree-land2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-64rem);
+    }
+}
+/*
+@keyframes welkomst-hart-draai {
+    from {
+        transform: rotateY(0);
+    }
+    33% {
+        transform: perspective(20rem) rotateY(45deg)
+    }
+    66% {
+        transform: perspective(20rem) rotateY(-45deg);
+    }
+    to {
+        transform: rotateY(0deg);
+    }
+}
+*/
+@keyframes welkomst-hart-groei {
+    from {
+        width: 15rem;
+        height: 18rem;
+    }
+    50% {
+        width: 18rem;
+        height: 22rem;
+    }
+    to {
+        width: 15rem;
+        height: 18rem;
+    }
+}
+
+.container-alfa {
+    position: relative;
+}
+
+header {
+    background: linear-gradient( to bottom, black 20%, black, rgb(119, 0, 255) 80%, rgb(253, 182, 89));
+    height: 30rem;
+    position: relative;
+}
+/*
+.cont-Banner-A {
+    width: 12rem;
+    position: relative;
+}
+.cont-Banner-A-empty1 {
+    width: 12rem;
+}
+.cont-Banner-A-empty2 {
+    width: 12rem;
+}
+
+.Banner-A {
+    width: 4.5rem;
+    height: 5.5rem;
+    background: linear-gradient( to bottom, rgb(116, 1, 1), rgb(255, 115, 0), white);
+    position: absolute;
+    top: 3.95rem;
+    left: 3.5rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 1px solid black;
+    z-index: 1;
+    
+}
+
+.emoji-1 {
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: rgb(255, 106, 106);
+}
+
+.emoji-2 {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: white;
+}
+
+.emoji-3 {
+    position: absolute;
+    top: 2.6rem;
+    left: 2.6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    box-shadow: 2px -2px 2px 2px rgba(0, 0, 0, 0.493);
+    background-color: rgb(140, 140, 255);   
+}
+*/
+.bg-image {
+    background-image: url(images/sylouhette-zwaan-hemel.png);
+    background-size: 100% 120%;
+    background-position-y: -6rem;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    height: 30rem;
+    /*-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);*/
+    /*position: absolute; 
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 100;*/
+}
+
+.Anime-quotes:checked + div {
+    animation-name: eclipse;
+    animation-duration: 54700ms;
+    animation-timing-function: ease-out;
+    animation-delay: 497800ms;
+}
+
+.container-80-header {
+    padding-top: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cont-nav-banner {
+    width: 17.4rem;
+    height: 37.25em;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto, auto;
+    align-content: start;
+    row-gap: 1em;
+    /*border-right: 15px double rgba(250, 235, 215, 0.8);*/
+}
+
+.cont-nav-banner h1 {
+    align-self: start;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    margin: 0;
+    color: antiquewhite;
+    font-size: 2.75rem;
+    letter-spacing: -0.1rem;
+    text-shadow: -5px 5px 1px black,
+                 0.75px -0.75px 2.5px white;
+    border-bottom: 5px solid antiquewhite;
+    border-left: 10px solid antiquewhite;
+}
+/*
+.cont-nav-banner nav {
+    display: flex;
+    justify-content: center;   
+}
+
+.cont-nav-banner nav div a {
+    z-index: 100;
+}
+*/
+.cont-nav-banner nav div {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto;
+    /*align-content: center;*/
+    /*margin-right: 1.5rem;*/
+}
+/*
+.cont-nav-banner nav div:nth-of-type(4) {
+    margin-right: 0;    
+}
+*/
+.cont-nav-banner nav .div-menu a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: antiquewhite;
+    border-top: 5px double black;
+    border-right: 10px double black;
+    border-left: 10px double black;
+    border-bottom: 10px double black;
+    /*border-radius: 50px;
+    box-shadow: 0 5px 5px 10px antiquewhite;*/
+}
+
+
+#current-page {
+    color: whitesmoke;
+    border-bottom: 10px solid rgb(46, 46, 46);
+    background-color: transparent;
+}
+
+.cont-nav-banner nav div:nth-of-type(1) a {
+    padding: 0.5rem 3rem;
+}
+
+.cont-nav-banner nav div:nth-of-type(2) a {
+    padding: 0.5rem 2.9rem;   
+}
+
+.cont-nav-banner nav div:nth-of-type(3) a {
+    padding: 0.5rem 3rem;   
+}
+
+.cont-nav-banner nav div:nth-of-type(4) a {
+    padding: 0.5rem 3rem;   
+}
+
+/*.cont-nav-banner nav a:nth-of-type(4) {
+    padding: 0.5rem 2.4rem;
+}*/
+
+.cont-nav-banner nav div a:hover {
+    color: rgb(253, 121, 121);
+}
+.cont-nav-banner nav div a:nth-of-type(4):hover {
+    color: rgb(70, 181, 255, 0.8);  
+}
+
+.cont-nav-banner nav div a:nth-of-type(4) svg {
+    width: 0.8em;
+    height: 0.8em;
+    fill: rgb(70, 181, 255);
+}
+
+
+
+.cont-menu {
+    border-bottom: 5px solid antiquewhite;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(to top, antiquewhite, transparent, transparent);
+    padding-bottom: 2.5em;
+}
+
+.balk-menu {
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: 5px double transparent;
+    cursor: pointer;
+    background: linear-gradient(to top, antiquewhite, transparent, transparent);
+    border-radius: 50%;
+}
+
+.balk-menu:hover {
+    color: rgb(253, 121, 121);
+}
+
+.balk-hidden {
+    display: none;
+}
+
+.div-menu {
+    margin-top: 1em;
+}
+
+.div-menu a {
+    transform: rotateY(90deg);
+}
+
+.menu-balk:checked + div .div-menu a {
+    transform: rotateY(1deg);
+    background-color: rgba(0, 0, 0, 0.85);
+    transition-duration: 1750ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-quotes {
+    position: relative;
+    width: 100%;
+    height: 15em;
+}
+
+.cont-css-text { 
+   
+}
+
+.cont-css-text p {
+    width: 75%;
+    display: block;
+    color: rgb(24, 24, 24);
+    font-size: 2.75rem;
+    opacity: 0;
+    text-align: center;
+    margin: auto;
+    font-family: 'Satisfy', cursive;
+    text-shadow: -0.1em 0.1em 0.3em rgba(245, 245, 245, 0.7), 0.1em -0.1em 0.3em rgba(245, 245, 245, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+}
+.Anime-quotes:checked + div .cont-css-text p {
+    width: 30%;
+    transition: 60000ms ease;
+}
+
+.cont-css-text h2 {
+    width: 15rem;
+    position: absolute;
+    bottom: 25vh;
+    left: 30vw;
+    text-align: center;
+    margin: 0;
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    color: rgb(24, 24, 24);
+    text-shadow: 3px -3px 3px black;
+    letter-spacing: 0.5rem;
+    opacity: 0;
+}
+.Anime-quotes:checked + div .cont-css-text h2 {
+    animation-name: opacity-einde;
+    animation-duration: 150000ms;
+    animation-timing-function: ease;
+    animation-delay: 510000ms;
+}
+
+.cont-css-text p:nth-of-type(28) {
+    font-size: 6rem;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.svg-heart {
+    margin: 0;
+    width: 3rem;
+    /*fill: red;*/
+}
+/*
+.Anime-quotes:checked + div .svg-heart {
+    animation-name: heart;
+    animation-duration: 70000ms;
+    animation-timing-function: ease;
+    animation-delay: 472500ms;
+}
+*/
+.Anime-quotes:checked + div #svg-size {
+    width: 20rem;
+    transition: 70000ms ease;
+    transition-delay: 472500ms;
+}
+
+.container-tussen {
+    height: 12rem;
+    background: linear-gradient( to bottom, rgb(253, 182, 89), rgba(253, 182, 89, 0.5), rgb(119, 0, 255, 0.7), rgb(51, 0, 109) 90%);
+}
+
+.plankmuur {
+    width: 11vw;
+    position: absolute;
+    top: 15.75em;
+    left: 1vw;
+    z-index: 1;
+    transform: perspective(17.5rem) rotateY(30deg);
+}
+.plankmuur > div:nth-of-type(1){
+    width: 100%;
+    height: 4em;
+    background-image: url(images/muurplank.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.plankmuur > div:nth-of-type(2){
+    width: 100%;
+    height: 4em;
+    background-image: url(images/muurplank.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.plankmuur > div:nth-of-type(3){
+    width: 100%;
+    height: 4em;
+    background-image: url(images/muurplank.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.plankmuur > div:nth-of-type(4){
+    width: 100%;
+    height: 4em;
+    background-image: url(images/muurplank.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.welkomst-hart {
+    width: 15vw;
+    height: 18vh;
+    position: absolute;
+    top: 15em;
+    left: 1vw;
+    z-index: 1;
+}
+/*
+.welkomst-hart {
+    animation-name: welkomst-hart-draai;
+    animation-duration: 30000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+*/
+.welkomst-hart {
+    animation-name: welkomst-hart-groei;
+    animation-duration: 3000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.logo {
+    width: 10vw;
+    height: 17.25vh;
+    background-image: url(images/logo-lightwork.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1rem;
+    left: 1vw;
+    z-index: 1;
+}
+
+audio {
+    height: 4vh;
+    width: 23vw;
+    position: absolute;
+    top: 35.8em;
+    left: 1vw;
+    border: 5px dotted rgba(250, 235, 215, 0.8);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.label-quotes {
+    position: absolute;
+    top: 12.25em;
+    left: 11vw;
+    font-size: 2.25rem;
+    font-style: italic;
+    cursor: pointer;
+    text-shadow: -5px 5px 3px whitesmoke;
+    color: rgb(48, 48, 48);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+    background-color: rgb(250, 65, 65);
+    z-index: 5;
+}
+
+.label-quotes:hover {
+    background-color: green;
+    top: 12.3em;
+}
+
+.Anime-quotes {
+    position: absolute;
+    top: 7.75rem;
+    left: 22.5%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer; 
+    z-index: 5;
+    display: none;
+}
+
+.uitleg-zons-verduistering {
+    position: absolute;
+    top: 26em;
+    left: 1.5vw;
+    font-size: 1.25rem;
+    color: rgb(7, 7, 7);
+    text-shadow: -0.1em 0.1em 0.3em rgba(245, 245, 245, 0.7), 0.1em -0.1em 0.3em rgba(245, 245, 245, 0.7);
+    z-index: 11;
+}
+
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(1) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(2) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 17500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(3) {
+    transform: translate(-20vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 35000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(4) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 52500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(5) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 70000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(6) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 87500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(7) {
+    transform: translate(40vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 105000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(8) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 122500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(9) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 140000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(10) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 157500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(11) {
+    transform: translate(-20vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 175000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(12) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 192500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(13) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 210000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(14) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 227500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(15) {
+    transform: translate(40vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 245000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(16) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 262500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(17) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 280000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(18) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 297500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(19) {
+    transform: translate(-20vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 315000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(20) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 332500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(21) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 350000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(22) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 367500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(23) {
+    transform: translate(40vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 385000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(24) {
+    transform: translate(25vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 402500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(25) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 420000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(26) {
+    transform: translate(-5vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 437500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(27) {
+    transform: translate(-20vw, -40rem);
+    font-size: 0.1rem;
+    transition: 60000ms ease;
+    transition-delay: 455000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(28) {
+    transform: translate(10vw, -40rem);
+    font-size: 0.1rem;
+    transition: 65000ms ease;
+    transition-delay: 472500ms; 
+}
+/*
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(29) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 490000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(30) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 500000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(31) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 515000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(32) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 525000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(33) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 535000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(34) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 543000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(35) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 550000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(36) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 560000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(37) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 568000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(38) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 575000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(39) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 580000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(40) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 590000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(41) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 595000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(42) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 602000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(43) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 610000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(44) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 618000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(45) {
+    transform: translate(10vw, -70vh);
+    transition: 65000ms ease;
+    animation-delay: 625000ms; 
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(1) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(2) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 17500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(3) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 35000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(4) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 52500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(5) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 70000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(6) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 87500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(7) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 105000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(8) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 122500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(9) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 140000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(10) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 157500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(11) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 175000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(12) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 192500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(13) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 210000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(14) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 227500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(15) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 245000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(16) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 262500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(17) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 280000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(18) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 297500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(19) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 315000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(20) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 332500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(21) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 350000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(22) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 367500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(23) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 385000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(24) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 402500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(25) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 420000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(26) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 437500ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(27) {
+    animation-name: opacity;
+    animation-duration: 60000ms;
+    animation-timing-function: ease;
+    animation-delay: 455000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(28) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 472500ms;
+}
+/*
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(29) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 490000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(30) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 500000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(31) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 515000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(32) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 525000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(33) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 535000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(34) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 543000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(35) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 550000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(36) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 560000ms; 
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(37) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 568000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(38) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 575000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(39) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 580000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(40) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 590000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(41) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 595000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(42) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 602000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(43) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 610000ms;
+}
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(44) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 618000ms;
+}
+
+.Anime-quotes:checked + div .cont-css-text p:nth-of-type(45) {
+    animation-name: opacity;
+    animation-duration: 65000ms;
+    animation-timing-function: ease;
+    animation-delay: 625000ms;
+}
+*/
+
+
+
+
+
+/*
+.hart-4,
+.hart-8,
+.hart-13 {
+    width: 2rem;
+}
+
+.hart-2,
+.hart-5,
+.hart-9,
+.hart-14 {
+    width: 4rem;
+}
+
+.hart-3,
+.hart-6,
+.hart-10,
+.hart-15 {
+    width: 3rem;
+}
+
+.hart-7,
+.hart-11,
+.hart-12,
+.hart-18,
+.hart-16,
+.hart-17 {
+    width: 5rem;
+}
+
+.ballons-extra {
+    width: 3rem;
+}
+*/
+
+
+
+
+
+/*
+.Anime-quotes:checked + div #hart-4 {
+    width: 13rem;
+    transition: 70000ms ease;
+    animation-delay: 490000ms;
+}
+.Anime-quotes:checked + div #hart-8 {
+    width: 17rem;
+    transition: 70000ms ease;
+    animation-delay: 500000ms;
+}
+.Anime-quotes:checked + div #hart-13 {
+    width: 15rem;
+    transition: 70000ms ease;
+    animation-delay: 515000ms; 
+}
+
+.Anime-quotes:checked + div #hart-2 {
+    width: 12rem;
+    transition: 70000ms ease;
+    animation-delay: 525000ms;
+}
+.Anime-quotes:checked + div #hart-5 {
+    width: 19rem;
+    transition: 70000ms ease;
+    animation-delay: 535000ms;
+}
+.Anime-quotes:checked + div #hart-9 {
+    width: 12rem;
+    transition: 70000ms ease;
+    animation-delay: 543000ms;
+}
+.Anime-quotes:checked + div #hart-14 {
+    width: 15rem;
+    transition: 70000ms ease;
+    animation-delay: 550000ms;
+}
+
+.Anime-quotes:checked + div #hart-3 {
+    width: 17rem;
+    transition: 70000ms ease;
+    animation-delay: 560000ms;
+}
+.Anime-quotes:checked + div #hart-6 {
+    width: 10rem;
+    transition: 70000ms ease;
+    animation-delay: 568000ms;
+}
+.Anime-quotes:checked + div #hart-10 {
+    width: 15rem;
+    transition: 70000ms ease;
+    animation-delay: 575000ms;
+}
+.Anime-quotes:checked + div #hart-15 {
+    width: 20rem;
+    transition: 70000ms ease;
+    animation-delay: 580000ms;
+}
+
+.Anime-quotes:checked + div #hart-7 {
+    width: 14rem;
+    transition: 70000ms ease;
+    animation-delay: 590000ms;
+}
+.Anime-quotes:checked + div #hart-11 {
+    width: 15rem;
+    transition: 70000ms ease;
+    animation-delay: 595000ms;
+}
+.Anime-quotes:checked + div #hart-12 {
+    width: 18rem;
+    transition: 70000ms ease;
+    animation-delay: 602000ms;
+}
+.Anime-quotes:checked + div #hart-18 {
+    width: 12rem;
+    transition: 70000ms ease;
+    animation-delay: 610000ms;
+}
+.Anime-quotes:checked + div #hart-16 {
+    width: 15rem;
+    transition: 70000ms ease;
+    animation-delay: 618000ms;
+}
+.Anime-quotes:checked + div #hart-17 {
+    width: 20rem;
+    transition: 70000ms ease;
+    animation-delay: 625000ms;   
+}
+*/
+
+
+
+
+
+
+
+@keyframes leave-color-A {
+    from {
+        fill: rgb(43, 247, 43);
+    }
+    50% {
+        fill: rgb(151, 216, 0);
+    }
+    to {
+        fill: rgb(43, 247, 43);
+    }
+}
+
+@keyframes leave-color-B {
+    from {
+        fill: rgb(43, 247, 43);
+    }
+    50% {
+        fill: rgb(224, 228, 0);
+    }
+    to {
+        fill: rgb(43, 247, 43);
+    }
+}
+
+@keyframes leave-color-C {
+    from {
+        fill: rgb(214, 218, 3);
+    }
+    50% {
+        fill: rgb(235, 173, 3);
+    }
+    to {
+        fill: rgb(214, 218, 3);
+    }
+}
+
+@keyframes leave-move-A {
+    from {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-1rem);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(1rem);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes leave-move-B {
+    from {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-1rem);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(1rem);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes leave-move-C {
+    from {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-1rem, -1rem);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(1rem, 1rem);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes leave-move-D {
+    from {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-1rem, 1rem);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    75% {
+        transform: translate(1rem, -1rem);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes opacity-B {
+    from {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;  
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.leaves {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    bottom: 23.35rem;
+    left: 60rem;
+}
+
+.leaves > div {
+    position: absolute;
+}
+
+.leaves svg {
+    fill: greenyellow;
+    opacity: 0.5;
+}
+
+.leaves > div:nth-of-type(1) {
+    bottom: 5rem;
+    left: 0;
+    z-index: 1;
+}
+.leaves > div:nth-of-type(1) svg {
+    width: 3rem; 
+}
+body:hover .leaves > div:nth-of-type(1) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+
+.leaves > div:nth-of-type(2) {
+    bottom: 0.5rem;
+    left: -15em;
+    z-index: 1;  
+}
+.leaves > div:nth-of-type(2) svg {
+    width: 9rem;
+    transform: rotateY(180deg);
+}
+body:hover .leaves > div:nth-of-type(2) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 4000ms;  
+}
+
+.leaves > div:nth-of-type(3) {
+    bottom: 13.5rem;
+    left: -2.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(3) svg {
+    width: 9rem; 
+    transform: skew(-20deg, -10deg);  
+}
+body:hover .leaves > div:nth-of-type(3) svg {
+    animation-name: leave-color-C, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;  
+}
+
+.leaves > div:nth-of-type(4) {
+    bottom: 13.5rem;
+    left: -22.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(4) svg {
+    width: 1.5rem;
+}
+body:hover .leaves > div:nth-of-type(4) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;  
+}
+
+.leaves > div:nth-of-type(5) {
+    bottom: 0.5rem;
+    left: -30em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(5) svg {
+    width: 4rem;
+    transform: rotate(-15rem, -160rem);  
+}
+body:hover .leaves > div:nth-of-type(5) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;  
+}
+
+.leaves > div:nth-of-type(6) {
+    bottom: 3.5rem;
+    left: -47em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(6) svg {
+    width: 6rem;
+    transform: skew(20deg);  
+}
+body:hover .leaves > div:nth-of-type(6) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 3000ms;  
+}
+
+.leaves > div:nth-of-type(7) {
+    bottom: 29rem;
+    left: -53em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(7) svg {
+    width: 2rem;
+    transform: rotateY(180deg);   
+}
+body:hover .leaves > div:nth-of-type(7) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 6000ms;  
+}
+
+.leaves > div:nth-of-type(8) {
+    bottom: 35rem;
+    left: -43em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(8) svg {
+    width: 9rem;  
+}
+body:hover .leaves > div:nth-of-type(8) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 9000ms;  
+}
+
+.leaves > div:nth-of-type(9) {
+    bottom: 44.5rem;
+    left: -22em;
+    z-index: 0;   
+}
+.leaves > div:nth-of-type(9) svg {
+    width: 4rem;
+    transform: skew(15deg);  
+}
+body:hover .leaves > div:nth-of-type(9) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 12000ms;  
+}
+
+.leaves > div:nth-of-type(10) {
+    bottom: 23rem;
+    left: -8em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(10) svg {
+    width: 11.5rem;
+    transform: rotateY(180deg);      
+}
+body:hover .leaves > div:nth-of-type(10) svg {
+    animation-name: leave-color-C, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 4000ms;  
+}
+
+.leaves > div:nth-of-type(11) {
+    bottom: 40rem;
+    left: -3em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(11) svg {
+    width: 7.5rem;     
+}
+body:hover .leaves > div:nth-of-type(11) svg {
+    animation-name: leave-color-B, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+}
+
+.leaves > div:nth-of-type(12) {
+    bottom: 45rem;
+    left: 14em;
+    z-index: 5;      
+}
+.leaves > div:nth-of-type(12) svg {
+    width: 6rem;
+    transform: rotateY(180deg);     
+}
+body:hover .leaves > div:nth-of-type(12) svg {
+    animation-name: leave-color-B, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 4000ms;
+}
+
+.leaves > div:nth-of-type(13) {
+    bottom: 27rem;
+    left: 16em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(13) svg {
+    width: 5rem;
+}
+body:hover .leaves > div:nth-of-type(13) svg {
+    animation-name: leave-color-C, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;  
+}
+
+.leaves > div:nth-of-type(14) {
+    bottom: 0;
+    left: 19em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(14) svg {
+    width: 11.5rem;    
+}
+body:hover .leaves > div:nth-of-type(14) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;  
+}
+
+.leaves > div:nth-of-type(15) {
+    bottom: 20rem;
+    left: 25em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(15) svg {
+    width: 6rem;
+    transform: rotateY(160deg);     
+}
+body:hover .leaves > div:nth-of-type(15) svg {
+    animation-name: leave-color-C, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;  
+}
+
+.leaves > div:nth-of-type(16) {
+    bottom: 1.5rem;
+    left: 39.5em;
+    z-index: 1;        
+}
+.leaves > div:nth-of-type(16) svg {
+    width: 6rem;
+    transform: rotateY(140deg);     
+}
+body:hover .leaves > div:nth-of-type(16) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+
+.leaves > div:nth-of-type(17) {
+    bottom: 17.5rem;
+    left: 37em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(17) svg {
+    width: 3rem;
+    transform: skew(13deg);   
+}
+body:hover .leaves > div:nth-of-type(17) svg {
+    animation-name: leave-color-B, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 7000ms;
+}
+
+.leaves > div:nth-of-type(18) {
+    bottom: 29rem;
+    left: 39em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(18) svg {
+    width: 9.5rem;
+    transform: skew(13deg);   
+}
+body:hover .leaves > div:nth-of-type(18) svg {
+    animation-name: leave-color-B, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;
+}
+
+.leaves > div:nth-of-type(19) {
+    bottom: 35rem;
+    left: 24em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(19) svg {
+    width: 5.5rem;
+    transform: rotateY(140deg);  
+}
+body:hover .leaves > div:nth-of-type(19) svg {
+    animation-name: leave-color-C, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 13000ms;  
+}
+
+.leaves > div:nth-of-type(20) {
+    bottom: 42rem;
+    left: 34em;
+    z-index: 1;  
+}
+.leaves > div:nth-of-type(20) svg {
+    width: 5rem;     
+}
+body:hover .leaves > div:nth-of-type(20) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+
+.leaves > div:nth-of-type(21) {
+    bottom: 1rem;
+    left: 7em;
+    z-index: 1;
+}
+.leaves > div:nth-of-type(21) svg {
+    width: 7rem;   
+}
+body:hover .leaves > div:nth-of-type(21) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 11000ms;  
+}
+
+.leaves > div:nth-of-type(22) {
+    bottom: 7.5rem;
+    left: -7.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(22) svg {
+    width: 5rem;
+    transform: skew(20deg);  
+}
+body:hover .leaves > div:nth-of-type(22) svg {
+    animation-name: leave-color-B, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
+}
+
+.leaves > div:nth-of-type(23) {
+    bottom: 16.5rem;
+    left: -10.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(23) svg {
+    width: 4rem;
+}
+body:hover .leaves > div:nth-of-type(23) svg {
+    animation-name: leave-color-B, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;
+}
+
+.leaves > div:nth-of-type(24) {
+    bottom: 5rem;
+    left: -27.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(24) svg {
+    width: 7rem;
+    transform: rotateX(160deg);  
+}
+body:hover .leaves > div:nth-of-type(24) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+
+.leaves > div:nth-of-type(25) {
+    bottom: 7.5rem;
+    left: -38em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(25) svg {
+    width: 10rem;
+    transform: rotateY(-170deg);   
+}
+body:hover .leaves > div:nth-of-type(25) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;  
+}
+
+.leaves > div:nth-of-type(26) {
+    bottom: 0;
+    left: -58em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(26) svg {
+    width: 11rem;
+    transform: skew(20deg);   
+}
+body:hover .leaves > div:nth-of-type(26) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 11000ms;  
+}
+
+.leaves > div:nth-of-type(27) {
+    bottom: 31.5rem;
+    left: -51.5em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(27) svg {
+    width: 6.5rem;
+    transform: skew(20deg);  
+}
+body:hover .leaves > div:nth-of-type(27) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 14000ms;  
+}
+
+.leaves > div:nth-of-type(28) {
+    bottom: 45rem;
+    left: -40em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(28) svg {
+    width: 2.5rem;  
+}
+body:hover .leaves > div:nth-of-type(28) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;  
+}
+
+.leaves > div:nth-of-type(29) {
+    bottom: 35rem;
+    left: -15em;
+    z-index: 0;    
+}
+.leaves > div:nth-of-type(29) svg {
+    width: 7rem;
+    transform: skew(15deg);
+}
+body:hover .leaves > div:nth-of-type(29) svg {
+    animation-name: leave-color-B, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 8000ms;
+}
+
+.leaves > div:nth-of-type(30) {
+    bottom: 35rem;
+    left: -4em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(30) svg {
+    width: 3.5rem;
+    transform: rotateY(180deg);
+}
+body:hover .leaves > div:nth-of-type(30) svg {
+    animation-name: leave-color-C, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 16000ms;  
+}
+
+.leaves > div:nth-of-type(31) {
+    bottom: 45rem;
+    left: -7em;
+    z-index: 0;    
+}
+.leaves > div:nth-of-type(31) svg {
+    width: 2.5rem;
+    transform: skew(20deg); 
+}
+body:hover .leaves > div:nth-of-type(31) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 3500ms;  
+}
+
+.leaves > div:nth-of-type(32) {
+    bottom: 37rem;
+    left: 8em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(32) svg {
+    width: 3rem;    
+}
+body:hover .leaves > div:nth-of-type(32) svg {
+    animation-name: leave-color-C, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 16500ms;  
+}
+
+.leaves > div:nth-of-type(33) {
+    bottom: 22rem;
+    left: 13em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(33) svg {
+    width: 2rem;  
+}
+body:hover .leaves > div:nth-of-type(33) svg {
+    animation-name: leave-color-C, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+
+.leaves > div:nth-of-type(34) {
+    bottom: 14rem;
+    left: 23em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(34) svg {
+    width: 4rem;
+    transform: skew(25deg);     
+}
+body:hover .leaves > div:nth-of-type(34) svg {
+    animation-name: leave-color-B, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 11000ms;
+}
+
+.leaves > div:nth-of-type(35) {
+    bottom: 5rem;
+    left: 33em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(35) svg {
+    width: 8rem;
+    transform: rotateY(160deg);      
+}
+body:hover .leaves > div:nth-of-type(35) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 6500ms;  
+}
+
+.leaves > div:nth-of-type(36) {
+    bottom: 15.5rem;
+    left: -62em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(36) svg {
+    width: 10.5rem;    
+}
+body:hover .leaves > div:nth-of-type(36) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 9500ms;  
+}
+
+.leaves > div:nth-of-type(37) {
+    bottom: 22.5rem;
+    left: 34em;
+    z-index: 1;
+}
+.leaves > div:nth-of-type(37) svg {
+    width: 6.5rem;   
+}
+body:hover .leaves > div:nth-of-type(37) svg {
+    animation-name: leave-color-B, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 14000ms;
+}
+
+.leaves > div:nth-of-type(38) {
+    bottom: 30.5rem;
+    left: 30.5em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(38) svg {
+    width: 5rem;
+    transform: rotateY(140deg);      
+}
+body:hover .leaves > div:nth-of-type(38) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 12500ms;  
+}
+
+.leaves > div:nth-of-type(39) {
+    bottom: 42rem;
+    left: 25em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(39) svg {
+    width: 5.5rem;   
+}
+body:hover .leaves > div:nth-of-type(39) svg {
+    animation-name: leave-color-B, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.leaves > div:nth-of-type(40) {
+    bottom: 45rem;
+    left: 36em;
+    z-index: 1;       
+}
+.leaves > div:nth-of-type(40) svg {
+    width: 7rem;     
+}
+body:hover .leaves > div:nth-of-type(40) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;  
+}
+
+.leaves > div:nth-of-type(41) {
+    bottom: 1rem;
+    left: 7em;
+    z-index: 1; 
+}
+.leaves > div:nth-of-type(41) svg {
+    width: 2rem;
+}
+body:hover .leaves > div:nth-of-type(41) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 4500ms;  
+}
+
+.leaves > div:nth-of-type(42) {
+    bottom: 9.5rem;
+    left: 3.5em;
+    z-index: 1;
+}
+.leaves > div:nth-of-type(42) svg {
+    width: 4rem;
+}
+body:hover .leaves > div:nth-of-type(42) svg {
+    animation-name: leave-color-B, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;
+}
+
+.leaves > div:nth-of-type(43) {
+    bottom: 10.5rem;
+    left: -17.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(43) svg {
+    width: 6rem;
+}
+body:hover .leaves > div:nth-of-type(43) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 7500ms;  
+}
+
+.leaves > div:nth-of-type(44) {
+    bottom: 3rem;
+    left: -22.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(44) svg {
+    width: 2.5rem;
+    transform: rotateY(160deg);   
+}
+body:hover .leaves > div:nth-of-type(44) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 10500ms;  
+}
+
+.leaves > div:nth-of-type(45) {
+    bottom: 0.25rem;
+    left: -37em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(45) svg {
+    width: 5rem;
+    transform: skew(20deg);   
+}
+body:hover .leaves > div:nth-of-type(45) svg {
+    animation-name: leave-color-A, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 13500ms;  
+}
+
+.leaves > div:nth-of-type(46) {
+    bottom: 13rem;
+    left: -51.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(46) svg {
+    width: 14rem;
+    transform: skew(-15deg);   
+}
+body:hover .leaves > div:nth-of-type(46) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 16500ms;  
+}
+
+.leaves > div:nth-of-type(47) {
+    bottom: 39rem;
+    left: -54.5em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(47) svg {
+    width: 9rem; 
+    transform: rotateY(180deg);  
+}
+body:hover .leaves > div:nth-of-type(47) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;  
+}
+
+.leaves > div:nth-of-type(48) {
+    bottom: 38.5rem;
+    left: -33em;
+    z-index: 4;   
+}
+.leaves > div:nth-of-type(48) svg {
+    width: 7.5rem;
+    transform: skew(15deg);   
+}
+body:hover .leaves > div:nth-of-type(48) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+
+.leaves > div:nth-of-type(49) {
+    bottom: 43.5rem;
+    left: -13em;
+    z-index: 2;   
+}
+.leaves > div:nth-of-type(49) svg {
+    width: 2rem;   
+}
+body:hover .leaves > div:nth-of-type(49) svg {
+    animation-name: leave-color-B, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 4500ms;
+}
+
+.leaves > div:nth-of-type(50) {
+    bottom: 28rem;
+    left: 4em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(50) svg {
+    width: 6rem;
+    transform: skew(15deg);      
+}
+body:hover .leaves > div:nth-of-type(50) svg {
+    animation-name: leave-color-C, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5500ms;  
+}
+
+.leaves > div:nth-of-type(51) {
+    bottom: 43rem;
+    left: 7em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(51) svg {
+    width: 4.5rem;
+    transform: rotateY(180deg);
+}
+body:hover .leaves > div:nth-of-type(51) svg {
+    animation-name: leave-color-B, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 7500ms;
+}
+
+.leaves > div:nth-of-type(52) {
+    bottom: 35rem;
+    left: 15em;
+    z-index: 1;   
+}
+.leaves > div:nth-of-type(52) svg {
+    width: 5.5rem;     
+}
+body:hover .leaves > div:nth-of-type(52) svg {
+    animation-name: leave-color-C, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+
+.leaves > div:nth-of-type(53) {
+    bottom: 9rem;
+    left: 11em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(53) svg {
+    width: 8.5rem;
+    transform: rotateY(180deg);   
+}
+body:hover .leaves > div:nth-of-type(53) svg {
+    animation-name: leave-color-B, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 10500ms;
+}
+
+.leaves > div:nth-of-type(54) {
+    bottom: 11rem;
+    left: 28em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(54) svg {
+    width: 4.5rem;      
+}
+body:hover .leaves > div:nth-of-type(54) svg {
+    animation-name: leave-color-B, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 13500ms;
+}
+
+.leaves > div:nth-of-type(55) {
+    bottom: 1rem;
+    left: 31.5em;
+    z-index: 1;        
+}
+.leaves > div:nth-of-type(55) svg {
+    width: 1.5rem;
+    transform: skew(15deg);      
+}
+body:hover .leaves > div:nth-of-type(55) svg {
+    animation-name: leave-color-A, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 8500ms;  
+}
+
+.leaves > div:nth-of-type(56) {
+    bottom: 11.5rem;
+    left: 41em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(56) svg {
+    width: 4rem;
+    transform: skew(13deg); 
+}
+body:hover .leaves > div:nth-of-type(56) svg {
+    animation-name: leave-color-A, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 11500ms;  
+}
+
+.leaves > div:nth-of-type(57) {
+    bottom: 27rem;
+    left: 27em;
+    z-index: 1;    
+}
+.leaves > div:nth-of-type(57) svg {
+    width: 3rem;
+    transform: rotateY(140deg);     
+}
+body:hover .leaves > div:nth-of-type(57) svg {
+    animation-name: leave-color-C, leave-move-D, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 11500ms;  
+}
+
+.leaves > div:nth-of-type(58) {
+    bottom: 28.5rem;
+    left: -61.5em;
+    z-index: 1;      
+}
+.leaves > div:nth-of-type(58) svg {
+    width: 7.5rem;
+}
+body:hover .leaves > div:nth-of-type(58) svg {
+    animation-name: leave-color-A, leave-move-A, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 14500ms;  
+}
+
+.leaves > div:nth-of-type(59) {
+    bottom: 38rem;
+    left: 30em;
+    z-index: 1;     
+}
+.leaves > div:nth-of-type(59) svg {
+    width: 2.5rem;     
+}
+body:hover .leaves > div:nth-of-type(59) svg {
+    animation-name: leave-color-B, leave-move-B, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 16500ms;
+}
+
+.leaves > div:nth-of-type(60) {
+    bottom: 37rem;
+    left: 38em;
+    z-index: 1;       
+}
+.leaves > div:nth-of-type(60) svg {
+    width: 1.5rem;
+    transform: rotateY(180deg);    
+}
+body:hover .leaves > div:nth-of-type(60) svg {
+    animation-name: leave-color-B, leave-move-C, opacity-B;
+    animation-duration: 7000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 2500ms;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-60-section-A {
+    width: 100%;
+    height: 47rem;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-top: 3.5rem;
+    position: relative;
+}
+
+.container-60-section-A > div:nth-of-type(1) {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;  
+}
+
+.container-60-section-A  .welcomst-A {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: antiquewhite;
+    width: 12rem;
+    position: absolute;
+    top: -5.5rem;
+    left: 35%; 
+    opacity: 0;
+    text-shadow: -5px 5px 2.5px black; 
+    z-index: 3;
+}
+
+.welcomst-A {
+    animation-name: ride, magic;
+    animation-duration: 4500ms;
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;   
+}
+
+.container-60-section-A  .welcomst-B {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: antiquewhite;
+    width: 12rem;
+    position: absolute;
+    top: -5.5rem;
+    left: 35%;
+    opacity: 0;
+    text-shadow: -5px 5px 2.5px black;
+    z-index: 1;
+}
+/*
+.HR-1 {
+    width: 12rem;
+    border: 3px solid whitesmoke;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    z-index: 5;
+}
+*/
+.welcomst-B {
+    animation-name: ride-rev, magic;
+    animation-duration: 4500ms;
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count: infinite;   
+}
+
+
+
+.container-60-section-A > div:nth-of-type(2) {
+    width: 85vw;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    /*justify-content: center; */
+    column-gap: 2.5%;
+     
+}
+
+.cont-hidden {
+    width: 25rem;
+    height: 36rem;
+    justify-self: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+}
+
+/*.container-60-section-A section {
+    width: 25rem;
+    position: relative;
+    height: 36rem;   
+}*/
+
+.cont-hidden-absolute-A {
+    position: absolute;
+    z-index: 10;
+}
+
+.cont-hidden-absolute-B {
+    width: 100%;
+    /*height: 21rem;*/
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em 1em;
+    border-radius: 20px;
+    /*position: absolute; 
+    z-index: 10;*/  
+}
+
+.cont-hidden label span {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: whitesmoke;
+}
+
+.cont-foto {
+    width: 25rem;
+    height: 18.8rem;
+    background-image: url(images/sigmond.jpg);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: -5px 5px 5px 10px black;
+    cursor: pointer;
+    position: relative;
+}
+
+.cont-foto:hover {
+    background-size: 110%, 110%;
+    transition-property: background-size;
+    transition: 1000ms ease;  
+}
+
+.cont-foto div svg {
+    opacity: 0;
+}
+
+.cont-foto div:nth-of-type(1) {
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+}
+.cont-foto div:nth-of-type(1) svg {
+    width: 4rem;
+    fill: black;
+}
+
+.cont-foto div:nth-of-type(2) {
+    position: absolute;
+    top: 0.5rem;
+    right:0.25rem;   
+}
+.cont-foto div:nth-of-type(2) svg {
+    width: 2rem;
+    fill: black;   
+}
+
+.cont-foto div:nth-of-type(3) {
+    position: absolute;
+    top: 10.5rem;
+    left: 0.5rem;   
+}
+.cont-foto div:nth-of-type(3) svg {
+    width: 6rem;
+    fill: black;   
+}
+
+.cont-foto:hover > div svg {
+    opacity: 0.75;
+    transition-property: opacity;
+    transition: 3000ms ease;
+}
+
+
+.cont-hidden-bar {
+    width: 12rem;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-3rem);
+    background: linear-gradient( to top, antiquewhite, rgb(119, 0, 255), rgb(51, 0, 109) 90%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 70%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 70%, 0% 100%);
+    border-radius: 5px;
+    border-top: 3px solid var(--dark-grey);
+}
+
+#hidden-bar:checked + div {
+    opacity: 1;
+    transform: translateY(0.5rem);
+    transition: 1000ms ease;
+
+}
+
+.check {
+    display: none;
+}
+
+.cont-hidden-bar h2 {
+    color: whitesmoke;
+    margin-top: 0;
+}
+
+.cont-hidden-bar p {
+    margin: 0.45rem;
+    color: antiquewhite;
+}
+
+.cont-hidden-bar p span {
+    color: var(--dark-grey);
+}
+
+.container-60-section-A > div section {
+    width: 42.5rem;
+    height: 21rem;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    position: relative;   
+}
+
+.container-60-section-A section h1 {
+    margin-top: 0;
+    text-align: center;
+    color: whitesmoke;   
+}
+.container-60-section-A section p {
+    color: antiquewhite;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container-50-B {
+    width: 50%;
+    margin: auto;
+}
+
+.section-A {
+    background: linear-gradient( to top, black, rgb(119, 0, 255), antiquewhite, rgb(119, 0, 255), rgb(51, 0, 109));
+    position: relative;
+    /*padding-bottom: 3rem;*/                       
+}
+
+.section-A-BG-frame {
+    width: 90%;
+    height: 75.5rem;
+    margin: 0 auto;
+    border-top: 20px solid black;
+    border-left: 21px solid black;
+    border-right: 20px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-A-BG {
+    width: 100.1%;
+    height: 73.5rem;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    background-image: url(images/black-bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    box-shadow: inset 1px 1px 50px 30px whitesmoke;   
+}
+
+.relative-container-tussen-Red-White {
+    width: 90%;
+    height: 2.5rem;
+    margin: 0 auto;
+    border-left: 20px solid black;
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative; 
+}
+
+.container-tussen-Red-White {
+    width: 100%;
+    height: 2.5rem;
+    margin: 0 auto;
+    background:linear-gradient( to bottom, whitesmoke, rgb(119, 0, 255), rgb(51, 0, 109) 50%);
+    /*background: linear-gradient(to top, black, red, red, whitesmoke);*/
+    /*border-left: 20px solid black;*/
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute; 
+    top: 0;
+    z-index: 75;
+}
+
+
+
+
+
+
+
+
+
+@keyframes play {
+    from {
+        background-color: whitesmoke;
+    }
+    to {
+        background-color: black;
+    }
+}
+
+
+
+
+
+
+
+
+.container-peilen {
+    position: absolute;
+    bottom: 12.5rem;
+    left: 87%;
+    z-index: 55;
+}
+
+.container-peilen div:nth-of-type(1) {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.25rem; 
+    background-color: whitesmoke;
+    border: 3px solid red;
+    border-radius: 50%;  
+}
+.Anime-B:checked + div .container-peilen div:nth-of-type(1) {
+    animation-name: play;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 250ms;
+    box-shadow: 0 1px 10px 1px whitesmoke;
+}
+
+.container-peilen div:nth-of-type(2) {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.25rem; 
+    background-color: whitesmoke;
+    border: 3px solid red;
+    border-radius: 50%;    
+}
+.Anime-B:checked + div .container-peilen div:nth-of-type(2) {
+    animation-name: play;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+    box-shadow: 0 1px 10px 1px whitesmoke;
+}
+
+.container-peilen div:nth-of-type(3) {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.25rem; 
+    background-color: whitesmoke;
+    border: 3px solid red;
+    border-radius: 50%;   
+}
+.Anime-B:checked + div .container-peilen div:nth-of-type(3) {
+    animation-name: play;
+    animation-duration: 1000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 1500ms;
+    box-shadow: 0 1px 10px 1px whitesmoke;
+}
+
+.hr-border-bottom {
+    width: 13.25vw;
+    height: 5px;
+    background-color: rgb(119, 0, 255);
+    border: transparent;
+    position: absolute;
+    bottom: 14.5rem;
+    left: 82.75%;
+    z-index: 55;
+}
+
+.label-B {
+    position: absolute;
+    bottom: 16.5rem;
+    left: 84%;
+    color: antiquewhite;
+    font-size: 1.75rem;
+    font-weight: 700;
+    font-style: italic;
+    cursor: pointer;
+    text-shadow: 5px 5px 5px var(--light-grey);
+    border: 2px solid red;
+    border-radius: 10px;
+    padding-left: 0.25%;
+    padding-right: 0.25%;
+    background-color: rgb(250, 79, 66);
+    z-index: 55;
+}
+
+.label-B:hover {
+    border: 2px solid green;
+    bottom: 16.25rem; 
+    text-shadow: 5px 5px 5px black;
+    background-color: rgb(125, 252, 125); 
+}
+
+.Anime-B {
+    position: absolute;
+    bottom: 16.4rem;
+    left: 82.5%;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+    z-index: 55;
+    display: none;
+}
+
+.container-voyage {
+    position: relative;
+}
+
+.curtain-top {
+    height: 2rem;
+    background:linear-gradient( to top, whitesmoke, rgb(119, 0, 255) 50%, rgb(51, 0, 109));
+    /*background: linear-gradient(to bottom, black 50%, red, white);*/
+}
+
+.curtain-left {
+    width: 27%;
+    height: 21rem;
+    position: absolute;
+    bottom: 0;
+    left: -1rem;
+    background:linear-gradient( to left, whitesmoke, rgb(119, 0, 255), rgb(51, 0, 109), black 10%);
+    /*background: linear-gradient(to right, black 90%, red, white);*/
+    z-index: 50;
+}
+
+.curtain-left p {
+    width: 13rem;
+    margin: 0 auto;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid rgb(119, 0, 255);
+    text-shadow: -5px 5px 5px var(--light-grey);
+}
+
+.curtain-right {
+    width: 25.25%;
+    height: 21rem;
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    background:linear-gradient( to right, whitesmoke, rgb(119, 0, 255), rgb(51, 0, 109), black 10%);
+    /*background: linear-gradient(to left, black 90%, red, white);*/
+    z-index: 50;
+}
+
+
+.containet-mist {
+    width: 100%;
+    background: linear-gradient(to right, white 50%, rgb(3, 3, 3));
+    opacity: 1;
+    position: relative;
+}
+
+.sky {
+    height: 12rem;
+    background: linear-gradient( to top, rgb(201, 107, 0), rgb(0, 0, 143), black 90%);
+    opacity: 0.8;
+    position: relative; 
+}
+
+.sun {
+    width: 1rem;
+    height: 1rem;
+    background: radial-gradient( circle, white, rgb(255, 230, 0) 40%, rgb(201, 130, 0));
+    border: 1px solid transparent;
+    box-shadow: 20px 20px 50px 50px rgb(255, 208, 0);
+    border-radius: 50%;
+    position: absolute;
+    left: 110%;
+    bottom: -1.5rem;
+    opacity: 1;
+    z-index: 1;
+}
+
+.Anime-B:checked + div .sun {
+    animation-name: sunset;
+    animation-duration: 360000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+.star1 {
+    width: 0.5rem;
+    margin: auto;
+    height: 0.5rem;
+    background: radial-gradient( circle, rgb(122, 220, 245), white 90%);
+    box-shadow: 20px 20px 50px 50px rgb(188, 247, 247);
+    border-radius: 50%;
+    position: absolute;
+    left: 10rem;
+    top: 1.5rem;
+    opacity: 0.9;  
+}
+
+.star2 {
+    width: 0.15rem;
+    margin: auto;
+    height: 0.15rem;
+    background: radial-gradient( circle, rgb(193, 236, 247) 30%, rgb(250, 204, 118), rgb(209, 206, 206));
+    border: 1px solid transparent;
+    box-shadow: 20px 20px 70px 40px rgb(188, 247, 247);
+    border-radius: 50%;
+    position: absolute;
+    left: 40rem;
+    top: 5.5rem; 
+    opacity: 0.5; 
+}
+
+.cloud1 {
+    position: absolute;
+    top: 8.5rem;
+    left: -18%;
+    z-index: 14;
+}
+
+.cloud1 svg {
+    width: 0.5rem;
+    fill: rgb(43, 43, 43);
+}
+
+.cloud2 {
+    position: absolute;
+    top: 5rem;
+    left: -15%;
+    z-index: 12;
+}
+
+.cloud2 svg {
+    width: 1rem;
+    fill: rgb(82, 81, 81);
+}
+
+.cloud3 {
+    position: absolute;
+    top: 7rem;
+    left: -16%; 
+    z-index: 13;
+}
+
+.cloud3 svg {
+    width: 1.5rem;
+    fill: rgb(61, 59, 59);
+}
+
+.cloud4 {
+    position: absolute;
+    top: 3.75rem;
+    left: -10%; 
+    z-index: 11;  
+}
+
+.cloud4 svg {
+    width: 2rem;
+    fill: rgb(122, 122, 122);
+}
+
+.cloud5 {
+    position: absolute;
+    top: 1rem;
+    right: -20%;
+    z-index: 16; 
+}
+
+.cloud5 svg {
+    width: 5rem;
+    fill: rgb(180, 180, 180);
+}
+
+.cloud6 {
+    position: absolute;
+    top: 2.5rem;
+    right: -16%;
+    z-index: 15; 
+}
+
+.cloud6 svg {
+    width: 4rem;
+    fill: rgb(151, 151, 151);
+}
+
+
+
+
+.Anime-B:checked + div .cloud1 {
+    animation-name: tree-land;
+    animation-duration: 330000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 15000ms;
+}
+
+.Anime-B:checked + div .cloud2 {
+    animation-name: tree-land;
+    animation-duration: 220000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;   
+}
+
+.Anime-B:checked + div .cloud3 {
+    animation-name: tree-land;
+    animation-duration: 280000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;   
+}
+
+.Anime-B:checked + div .cloud4 {
+    animation-name: tree-land;
+    animation-duration: 190000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 13000ms;   
+}
+
+.Anime-B:checked + div .cloud5 {
+    animation-name: tree-land2;
+    animation-duration: 300000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;  
+}
+
+.Anime-B:checked + div .cloud6 {
+    animation-name: tree-land2;
+    animation-duration: 270000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 15000ms;  
+}
+
+.ocean {
+    height: 9rem;
+    background: linear-gradient( to top, rgb(0, 217, 255), rgb(0, 0, 143));
+    opacity: 0.8;    
+}
+
+
+
+
+.tree1 {
+    position: absolute;
+    bottom: -0.6rem;
+    left: -16%;
+    z-index: 25;
+}
+
+.Anime-B:checked + div .tree1 {
+    animation-name: tree-land;
+    animation-duration: 70000ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 5000ms;
+}
+
+.tree1 svg{
+  width: 5rem;
+  fill: rgb(3, 75, 3);  
+}
+
+
+
+
+
+.tree2 {
+    position: absolute;
+    bottom: -1.25rem;
+    left: -26%;
+    z-index: 21;
+}
+
+.Anime-B:checked + div .tree2 {
+    animation-name: tree-land;
+    animation-duration: 90000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 10000ms;
+}
+
+.tree2 svg{
+  width: 10rem;
+  fill: rgb(1, 48, 1);  
+}
+
+
+
+
+
+.tree3 {
+    position: absolute;
+    bottom: -0.6rem;
+    left: -22%;
+    z-index: 23;
+}
+
+.Anime-B:checked + div .tree3 {
+    animation-name: tree-land;
+    animation-duration: 55000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 20000ms;
+}
+
+.tree3 svg{
+  width: 9rem;
+  fill: rgb(40, 73, 40); 
+}
+
+
+
+
+
+
+
+.tree4 {
+    position: absolute;
+    bottom: -1rem;
+    left: -35%;
+    z-index: 51;
+}
+
+.tree4 svg{
+  width: 8rem;
+  fill: rgb(47, 63, 47);  
+}
+
+
+
+
+.tree5 {
+    position: absolute;
+    bottom: -0.9rem;
+    right: -23%;
+    z-index: 22;
+}
+
+.Anime-B:checked + div .tree5 {
+    animation-name: tree-land2;
+    animation-duration: 480000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.tree5 svg{
+  width: 8rem;
+  fill: rgb(18, 48, 18);  
+}
+
+
+
+
+
+
+.tree6 {
+    position: absolute;
+    bottom: -1.25rem;
+    right: -26%;
+    z-index: 20;
+}
+
+.Anime-B:checked + div .tree6 {
+    animation-name: tree-land2;
+    animation-duration: 360000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 20000ms;
+}
+
+.tree6 svg{
+  width: 11rem;
+  fill: rgb(11, 37, 11); 
+}
+
+
+
+
+.tree7 {
+    position: absolute;
+    bottom: -0.6rem;
+    right: -21%;
+    z-index: 25;
+}
+
+.Anime-B:checked + div .tree7 {
+    animation-name: tree-land2;
+    animation-duration: 240000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 15000ms;
+}
+
+.tree7 svg{
+  width: 7rem;
+  fill: rgb(1, 51, 1);  
+}
+
+
+
+
+
+.tree8 {
+    position: absolute;
+    bottom: -0.45rem;
+    right: -40%;
+    z-index: 51;
+}
+
+.tree8 svg{
+  width: 6rem;
+  fill: rgb(0, 37, 0);  
+}
+
+
+
+
+
+
+.tree9 {
+    position: absolute;
+    bottom: -0.5rem;
+    right: -22%;
+    z-index: 52;
+}
+
+.tree9 svg{
+  width: 8rem;
+  fill: rgb(10, 53, 10);  
+}
+
+
+
+
+
+.tree10 {
+    position: absolute;
+    bottom: -0.6rem;
+    right: -8%;
+    z-index: 51;
+}
+
+.tree10 svg{
+  width: 8.5rem;
+  fill: rgb(18, 90, 18);  
+}
+
+
+
+
+
+.tree11 {
+    position: absolute;
+    bottom: -0.6rem;
+    left: -8.5%;
+    z-index: 51;
+}
+
+.tree11 svg{
+  width: 6.5rem;
+  fill: rgb(54, 83, 54);  
+}
+
+
+
+
+
+
+
+
+
+
+.drie-booten {
+    position: absolute;
+    bottom: 17rem;
+    right: 25%;
+}
+
+.cont-jumpheads1 {
+    height: 3rem;
+    align-self: end;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+}
+
+
+
+.boat1 {
+    border-bottom: 15px solid rgb(116, 1, 1);
+    border-radius:50px;
+    width: 15rem;
+    position: absolute;
+    bottom: -22rem;
+    right: -20rem;
+    z-index: 19;
+}
+
+.sails1:nth-of-type(1){
+    height: 11rem; 
+    width: 6rem;
+    background: radial-gradient( ellipse, white, rgb(253, 203, 138), rgb(83, 82, 82)90%, white);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    -webkit-clip-path: polygon(100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(100% 0%, 95% 100%, 0% 100%);
+}
+
+.sails1:nth-of-type(2){
+    height: 13rem; 
+    width: 0.25rem;
+    background-color: rgb(105, 41, 41);
+    position: absolute;
+    bottom: 0;
+    left: 6.75rem;   
+}
+
+.sails1:nth-of-type(3){
+    height: 8.5rem; 
+    width: 4.5rem;
+    background: radial-gradient( ellipse, rgb(204, 204, 204), rgb(252, 218, 174), rgb(83, 82, 82)90%, rgb(204, 204, 204));
+    position: absolute;
+    bottom: 0.5rem;
+    left: 7.25rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 7% 100%);
+    clip-path: polygon(0% 0%, 100% 100%, 7% 100%);  
+}
+
+.Anime-B:checked + div .boat1 {
+    animation-name: boat1;
+    animation-duration: 40000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.boat1 svg {
+    width: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.boat1 svg:nth-of-type(1) {
+    fill: rgb(217, 255, 0);
+    margin-left: 1rem;
+}
+
+.boat1 svg:nth-of-type(2) {
+    fill: greenyellow;
+}
+
+.boat1 svg:nth-of-type(3) {
+    fill: blue;
+}
+
+.boat1 svg:nth-of-type(4) {
+    fill: rgb(116, 1, 1);
+}
+
+.boat1 svg:nth-of-type(5) {
+    fill: rgb(252, 144, 4);
+}
+
+.boat1 svg:nth-of-type(6) {
+    fill: aqua;
+    margin-right: 0;
+}
+
+
+
+
+
+.cont-jumpheads2 {
+    height: 3rem;
+    align-self: end;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    position: relative;
+}
+
+.boat2 {
+    border-bottom: 10px solid rgb(88, 18, 18);
+    border-radius:50px;
+    width: 10rem;
+    position: absolute;
+    bottom: -16.5rem;
+    left: -75rem;
+    z-index: 18;
+}
+
+.sails2:nth-of-type(1){
+    height: 8.5rem; 
+    width: 4rem;
+    background: radial-gradient( ellipse, white, rgb(216, 180, 132), rgb(114, 113, 113)90%, white);
+    position: absolute;
+    bottom: 0.175rem;
+    right: 0.2rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 7% 100%);
+    clip-path: polygon(0% 0%, 100% 100%, 7% 100%);
+}
+
+.sails2:nth-of-type(2){
+    height: 9.5rem; 
+    width: 0.15rem;
+    background-color: rgb(92, 43, 43);
+    position: absolute;
+    bottom: 0;
+    right: 4.25rem;   
+}
+
+.sails2:nth-of-type(3){
+    height: 6rem; 
+    width: 3rem;
+    background: radial-gradient( ellipse, rgb(163, 162, 162), rgb(189, 168, 142), rgb(63, 63, 63)90%, rgb(163, 162, 162));
+    position: absolute;
+    bottom: 0.175rem;
+    right: 4.5rem;
+    -webkit-clip-path: polygon(100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(100% 0%, 95% 100%, 0% 100%);  
+}
+
+.Anime-B:checked + div .boat2 {
+    animation-name: boat2;
+    animation-duration: 120000ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-delay: 30000ms;
+}
+
+.boat2 svg {
+    width: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.boat2 svg:nth-of-type(1) {
+    fill: rgb(255, 0, 21);
+}
+
+.boat2 svg:nth-of-type(2) {
+    fill: greenyellow;
+}
+
+.boat2 svg:nth-of-type(3) {
+    fill: blue;
+}
+
+.boat2 svg:nth-of-type(4) {
+    fill: rgb(116, 1, 1);
+}
+
+.boat2 svg:nth-of-type(5) {
+    fill: rgb(252, 144, 4);
+}
+
+.boat2 svg:nth-of-type(6) {
+    fill: aqua;
+}
+
+
+
+
+
+.cont-jumpheads3 {
+    height: 3rem;
+    align-self: end;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    position: relative;
+}
+
+.boat3 {
+    border-bottom: 5px solid rgb(102, 42, 42);
+    border-radius:10px;
+    width: 5rem;
+    position: absolute;
+    bottom: -11rem;
+    left: -77rem;
+    z-index: 17;
+}
+
+.sails3:nth-of-type(1){
+    height: 5.33rem; 
+    width: 2.25rem;
+    background: radial-gradient( ellipse, white, rgb(172, 151, 124), rgb(155, 155, 155)90%, white);
+    position: absolute;
+    bottom: 0.12rem;
+    right: 0.135rem;
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 7% 100%);
+    clip-path: polygon(0% 0%, 100% 100%, 7% 100%);
+}
+
+.sails3:nth-of-type(2){
+    height: 6.1rem; 
+    width: 0.05rem;
+    background-color: rgb(104, 57, 57);
+    position: absolute;
+    bottom: 0;
+    right: 2.4rem;   
+}
+
+.sails3:nth-of-type(3){
+    height: 3.66rem; 
+    width: 1.5rem;
+    background: radial-gradient( ellipse, rgb(126, 126, 126), rgb(146, 133, 116), rgb(63, 63, 63)90%, rgb(126, 126, 126));
+    position: absolute;
+    bottom: 0.12rem;
+    right: 2.55rem;
+    -webkit-clip-path: polygon(100% 0%, 95% 100%, 0% 100%);
+    clip-path: polygon(100% 0%, 95% 100%, 0% 100%);  
+}
+
+.Anime-B:checked + div .boat3 {
+    animation-name: boat3;
+    animation-duration: 240000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 30000ms;
+}
+
+.boat3 svg {
+    width: 0.22rem;
+    margin-right: 0.25rem;
+}
+
+.boat3 svg:nth-of-type(1) {
+    fill: rgb(255, 115, 0);
+}
+
+.boat3 svg:nth-of-type(2) {
+    fill: greenyellow;
+}
+
+.boat3 svg:nth-of-type(3) {
+    fill: blue;
+}
+
+.boat3 svg:nth-of-type(4) {
+    fill: rgb(116, 1, 1);
+}
+
+.boat3 svg:nth-of-type(5) {
+    fill: rgb(252, 144, 4);
+}
+.boat3 svg:nth-of-type(6) {
+    fill: aqua;
+}
+
+
+
+
+.Anime-B:checked + div .A > svg:nth-of-type(1) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.Anime-B:checked + div .A > svg:nth-of-type(2) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 250ms;
+}
+
+.Anime-B:checked + div .A > svg:nth-of-type(3) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.Anime-B:checked + div .A > svg:nth-of-type(4) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 750ms;
+}
+
+.Anime-B:checked + div .A > svg:nth-of-type(5) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+}
+
+.Anime-B:checked + div .A > svg:nth-of-type(6) {
+    animation-name: jump1;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1250ms;
+}
+
+
+
+
+.Anime-B:checked + div .B > svg:nth-of-type(1) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.Anime-B:checked + div .B > svg:nth-of-type(2) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 250ms;
+}
+
+.Anime-B:checked + div .B > svg:nth-of-type(3) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.Anime-B:checked + div .B > svg:nth-of-type(4) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 750ms;
+}
+
+.Anime-B:checked + div .B > svg:nth-of-type(5) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+}
+
+.Anime-B:checked + div .B > svg:nth-of-type(6) {
+    animation-name: jump2;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1250ms;
+}
+
+
+
+
+
+.Anime-B:checked + div .C > svg:nth-of-type(1) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.Anime-B:checked + div .C > svg:nth-of-type(2) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 250ms;
+}
+
+.Anime-B:checked + div .C > svg:nth-of-type(3) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+.Anime-B:checked + div .C > svg:nth-of-type(4) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 750ms;
+}
+
+.Anime-B:checked + div .C > svg:nth-of-type(5) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1000ms;
+}
+
+.Anime-B:checked + div .C > svg:nth-of-type(6) {
+    animation-name: jump3;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1250ms;
+}
+
+
+
+
+
+.container-tussen2 {
+    height: 3rem;
+    background: linear-gradient( to top, antiquewhite, rgb(119, 0, 255), black);
+}
+
+footer {
+    width: 100vw;
+    background: linear-gradient( to top, black 20%, black, rgb(119, 0, 255) 90%, antiquewhite);
+    height: 12.5rem;
+}
+
+footer div {
+    width: 100%;
+    height: 12.5rem;
+    background-image: url(images/rode-draad-3d.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position-y: 1rem;
+    background-position-x: 50%;
+    opacity: 0.5;
+}
+
+footer p {
+    margin-top: 0;
+    padding-top: 8.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--light-grey);
+    word-spacing: 0.2rem;   
+}
+
+footer p span {
+    color: var(--med-grey);
+    word-spacing: 0.1rem;  
+}
+

@@ -1,0 +1,39 @@
+:root {
+    --dark-grey: rgb(56, 56, 56);
+    --med-grey: rgb(141, 140, 140);
+    --light-grey: rgb(211, 210, 210);
+    --lighter-grey: rgb(238, 238, 238);
+}
+
+
+header {
+    background: linear-gradient( to bottom, black 20%, black, rgb(119, 119, 119) 90%, antiquewhite);
+}
+
+.container-tussen {
+    background: linear-gradient( to bottom, antiquewhite, rgb(119, 119, 119), rgb(26, 26, 26) 90%);
+}
+
+#current-page {
+    color: rgb(179, 179, 179);
+    border: 5px solid rgb(26, 26, 26);
+}
+
+
+
+
+
+/*Footer*/
+
+.container-tussen2 {
+    background: linear-gradient( to top, antiquewhite, rgb(119, 119, 119), rgb(26, 26, 26) 90%);
+}
+
+footer {
+    background: linear-gradient( to top, black 20%, black, rgb(119, 119, 119) 90%, antiquewhite);
+}
+
+footer div {
+    background: linear-gradient( to right, antiquewhite, rgb(119, 119, 119), black 50%, rgb(119, 119, 119), antiquewhite);
+}
+/*footer*/

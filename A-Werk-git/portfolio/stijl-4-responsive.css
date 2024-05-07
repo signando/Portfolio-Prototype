@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 1538px) and (max-width: 1708px) {
+    .feedback-BG {
+        height: 115vh;
+    }
+}
+
+@media screen and (min-width: 1398px) and (max-width: 1537px) {
+    .feedback-BG {
+        height: 125vh;
+    }
+}
+
+@media screen and (min-width: 1282px) and (max-width: 1397px) {
+    .feedback-BG {
+        height: 135vh;
+    }
+}
+
+@media screen and (min-width: 1184px) and (max-width: 1281px) {
+    .feedback-BG {
+        height: 145vh;
+    }
+}
+
+@media screen and (max-width: 1183px) {
+    .feedback-BG {
+        height: 165vh;
+    }
+}
